@@ -82,38 +82,41 @@ module.exports = class Activity extends Command {
                                 value: "wordsnack",
                                 emoji: "🍜",
                             },
-                            /*
+
                             {
                                 label: "SpellCast",
-                                description: "Creates a Word Snack activity invite",
+                                description: "Creates a SpellCast activity invite",
                                 value: "spellcast",
-                                emoji: "🍜",
+                                emoji: "➿",
                             },
                             {
                                 label: "Awkword",
-                                description: "Creates a Word Snack activity invite",
+                                description: "Creates a Awkword activity invite",
                                 value: "awkword",
-                                emoji: "🍜",
+                                emoji: "📲",
                             },
                             {
                                 label: "Puttparty",
-                                description: "Creates a Word Snack activity invite",
+                                description: "Creates a Puttparty (Poker Nights DEV) activity invite",
                                 value: "puttparty",
-                                emoji: "🍜",
+                                emoji: "🃏",
                             },
                             {
                                 label: "Sketchheads",
-                                description: "Creates a Word Snack activity invite",
+                                description: "Creates a Sketchheads activity invite",
                                 value: "sketchheads",
-                                emoji: "🍜",
+                                emoji: "✏️",
                             },
+                            /*
                             {
                                 label: "Ocho",
-                                description: "Creates a Word Snack activity invite",
+                                description: "Creates a Ocho activity invite",
                                 value: "ocho",
                                 emoji: "🍜",
                             },
-                            */
+
+                             */
+
                             {
                                 label: "Doodle Crew",
                                 description: "Creates a Doodle Crew activity invite - Boost lvl 1 Needed",
@@ -202,14 +205,14 @@ module.exports = class Activity extends Command {
                                     });
                                 });
                             break;
-                            /*
+
                         case "spellcast":
                             this.bot.discordTogether
                                 .createTogetherCode(channel.id, "spellcast")
                                 .then(async (invite) => {
                                     await i.deferUpdate();
                                     return await i.editReply({
-                                        content: `[Click here to join Word snack](${invite.code} "Join A game of Word snack")`,
+                                        content: `[Click here to join spellcast](${invite.code} "Join A game of spellcast")`,
                                     });
                                 });
                             break;
@@ -219,7 +222,7 @@ module.exports = class Activity extends Command {
                                 .then(async (invite) => {
                                     await i.deferUpdate();
                                     return await i.editReply({
-                                        content: `[Click here to join Word snack](${invite.code} "Join A game of Word snack")`,
+                                        content: `[Click here to join awkword](${invite.code} "Join A game of awkword")`,
                                     });
                                 });
                             break;
@@ -229,7 +232,7 @@ module.exports = class Activity extends Command {
                                 .then(async (invite) => {
                                     await i.deferUpdate();
                                     return await i.editReply({
-                                        content: `[Click here to join Word snack](${invite.code} "Join A game of Word snack")`,
+                                        content: `[Click here to join puttparty](${invite.code} "Join A game of puttparty")`,
                                     });
                                 });
                             break;
@@ -239,20 +242,21 @@ module.exports = class Activity extends Command {
                                 .then(async (invite) => {
                                     await i.deferUpdate();
                                     return await i.editReply({
-                                        content: `[Click here to join Word snack](${invite.code} "Join A game of Word snack")`,
+                                        content: `[Click here to join sketchheads](${invite.code} "Join A game of sketchheads")`,
                                     });
                                 });
                             break;
+                            /*
                         case "Ocho":
                             this.bot.discordTogether
                                 .createTogetherCode(channel.id, "ocho")
                                 .then(async (invite) => {
                                     await i.deferUpdate();
                                     return await i.editReply({
-                                        content: `[Click here to join Word snack](${invite.code} "Join A game of Word snack")`,
+                                        content: `[Click here to join sketchheads](${invite.code} "Join A game of sketchheads")`,
                                     });
                                 });
-                             */
+*/
                             break;
                         case "doodlecrew":
                             this.bot.discordTogether
